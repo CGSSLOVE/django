@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왕초보 마작 배우기</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #495057;
+        }
+        section {
+            padding: 20px;
+            display: none;
+            margin-top: 60px;
+        }
+        section.active {
+            display: block;
+        }
+        h2 {
+            color: #007bff;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .bottom-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            z-index: 1000;
+            justify-content: center;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 11px;
+                padding: 10px 15px;
+            }
+            .bottom-nav {
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>왕초보 마작 배우기</h1>
+        <p>마작의 세계로 쉽게 입문하세요!</p>
+    </header>
+    
+    <!-- 제목 섹션 바로 아래의 네비게이션 바 -->
+    <nav>
+        <a href="#" onclick="showSection('tutorial')">기본 튜토리얼</a>
+        <a href="#" onclick="showSection('term')">마작 용어</a>
+        <a href="#" onclick="showSection('hands')">역 일람</a>
+        <a href="#" onclick="showSection('scoring')">점수 계산</a>
+        <a href="#" onclick="showSection('beginner')">초급 마작</a>
+        <a href="#" onclick="showSection('intermediate')">중급 마작</a>
+        <a href="#" onclick="showSection('advanced')">고급 마작</a>
+    </nav>
+    
+    <section id="tutorial" class="active">
+        <h2>기본 튜토리얼</h2>
+        <p> 마작은 결론부터 말하면, 머리 1개, 몸통 4개를 만들어 이기는 게임이다.
+        </p>
+        <img src="images/tutorial.jpg" alt="기본 튜토리얼 이미지">
+        <!-- 튜토리얼 내용 추가 -->
+    </section>
+     <section id="term">
+        <h2>마작 용어</h2>
+        <p>
+        </p>
+        <img src="images/term.jpg" alt="마작 용어 이미지">
+        <!-- 용어 내용 추가 -->
+    </section>
+    <section id="hands">
+        <h2>역 일람</h2>
+        <p>마작의 다양한 패턴과 조합을 알아보세요.</p>
+        <img src="images/hands.jpg" alt="역 일람 이미지">
+        <!-- 역 일람 내용 추가 -->
+    </section>
+    <section id="scoring">
+        <h2>점수 계산</h2>
+        <p>마작 점수 계산 방법을 배워보세요.</p>
+        <img src="images/scoring.jpg" alt="점수 계산 이미지">
+        <!-- 점수 계산 내용 추가 -->
+    </section>
+    <section id="beginner">
+        <h2>초급 마작</h2>
+        <p>초보자를 위한 마작 전략과 팁.</p>
+        <img src="images/beginner.jpg" alt="초급 마작 이미지">
+        <!-- 초급 마작 내용 추가 -->
+    </section>
+    <section id="intermediate">
+        <h2>중급 마작</h2>
+        <p>중급자를 위한 마작 전략과 팁.</p>
+        <img src="images/intermediate.jpg" alt="중급 마작 이미지">
+        <!-- 중급 마작 내용 추가 -->
+    </section>
+    <section id="advanced">
+        <h2>고급 마작</h2>
+        <p>고급자를 위한 마작 전략과 팁.</p>
+        <img src="images/advanced.jpg" alt="고급 마작 이미지">
+        <!-- 고급 마작 내용 추가 -->
+    </section>
+    
+    <!-- 하단 네비게이션 바 -->
+    <nav class="bottom-nav" id="bottomNav">
+        <a href="#" onclick="showSection('tutorial')">기본 튜토리얼</a>
+         <a href="#" onclick="showSection('hands')">역 일람</a>
+        <a href="#" onclick="showSection('hands')">역 일람</a>
+        <a href="#" onclick="showSection('scoring')">점수 계산</a>
+        <a href="#" onclick="showSection('beginner')">초급 마작</a>
+        <a href="#" onclick="showSection('intermediate')">중급 마작</a>
+        <a href="#" onclick="showSection('advanced')">고급 마작</a>
+    </nav>
+    
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const totalHeight = document.body.offsetHeight;
+
+            if (scrollPosition / totalHeight > 0.95) {
+                document.getElementById('bottomNav').style.display = 'flex';
+            } else {
+                document.getElementById('bottomNav').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

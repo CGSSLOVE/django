@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html 연습용</title>
+	<meta charset="utf-8">
+	<meta name="description" content="연습용 페이지">
+	<meta name="keywords" content="연습,html,이세돌,프로그래밍,css,javascript,js">
+	<link rel="stylesheet" type="text/css" href="li1.css?after">
+	<meta name="author" content="CHOI SION">
+	<script type="text/javascript" src="DN.js" defer></script>
+	<style>
+		#backcolor{
+			width: 100%;
+			height: 100%;
+			padding: 0px;
+ 			border-width: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="main_up" >
+			<div style="width:100%">
+				<header>
+					<h1> 
+						<a style="color:white" href="index.html">이세계아이돌</a>
+					</h1>
+				</header>
+			</div>
+			<div id="main_upright_box">
+				<input type="button" class="up" id="backcolor" value="night" onclick="daynight(this)"/>
+			</div>
+		</div>
+		<div id="main_down">
+			<div id="main_down_text">
+				<section>
+					<p>
+						여기는 연습용입니다. <a href="https://new.kcsnet.or.kr/periodic">주기율표</a>
+					</p>
+				    <article>
+                        
+                            <h1>표 연습 tr이 가로 </h1>
+                            <table>
+                                <thead></thead>
+                                <tbody>
+                                    <tr><td>이름</td><td>아이네</td></tr>
+                                    <tr><td>나이</td><td>30</td></tr>
+                                    <tr><td>신장</td><td>158</td></tr>
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+                        
+				    </article>
+                    <article>
+                        
+                            <h1> 폼 연습, 라디오, 체크박스, 콤보박스 </h1>
+                            <form action="http://localhost/login.php" method="post" enctype="multipart/form-data">
+                                <p><lable for="id">아이디 : <input type="text" id="id" name="id" value="아이디를 입력해주세요."></lable></p>
+                                <p><lable for="pw">비밀번호 : <input type="password" id="pw" name="pw" value="12345678"></lable></p>
+                                <p><lable for="notcie">공지 :  <textarea id="notice" cols="50" rows="20">
+                                            3.1415926535 2.7182818284
+                                            8979323846   5904523536
+                                            2643383279   0287471352
+                                            5028841971   6624977572
+                                            6939937510   4709369995
+                                            5820974944   9574966967
+                                            5923078164   6277240766
+                                            0628620899   3035354759
+                                            8628034825   4571382178
+                                            3421170679   5251664274
+                                          </textarea>
+                                    </lable>	
+                                </p>
+                                <p>
+                                    <select name="army">
+                                        <option value="육군">육군</option>
+                                        <option value="공군">공군</option>
+                                        <option value="해군">해군</option>
+                                        <option value="해병">해병</option>
+                                        <option value="상근">상근</option>
+                                        <option value="공익">공익</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <select name="army2" multiple>
+                                        <option value="육군">육군</option>
+                                        <option value="공군">공군</option>
+                                        <option value="해군">해군</option>
+                                        <option value="해병">해병</option>
+                                        <option value="상근">상근</option>
+                                        <option value="공익">공익</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <lable for="age_10">10대 : <input type="radio" id="age_10" name="age" value="10대"></lable>
+                                    <lable for="age_20">20대 : <input type="radio" id="age_20" name="age" value="20대" checked></lable> 
+                                    <lable for="age_30">30대 : <input type="radio" id="age_30" name="age" value="30대"></lable>
+                                </p>
+                                <p>
+                                    <lable for="sz_95">95 : <input type="checkbox" id="sz_95" name="size" value="95"></lable> 
+                                    <lable for="sz_100">100 : <input type="checkbox" id="sz_100" name="size" value="100" checked></lable>
+                                    <lable for="sz_105">105 : <input type="checkbox" id="sz_105" name="size" value="105" checked></lable>	
+                                </p>
+                                    <input type="button" onclick="alert('안녕 세상')" value="HW">
+                                    <input type="reset" value="리셋">
+                                    <input type="hidden" name="hide" value="lucy">
+                                    <input type="file" name="image">
+                                    <input type="submit">	
+                            </form>
+                        
+                    </article>
+				    <article>
+					<p><img src="https://new.kcsnet.or.kr/kcs/cheminfo/periodic_table_of_the_elements_kor_eng_20170203.png"></p>
+					<p>
+                        수소 헬륨 리튬 베릴륨 붕소 탄소 질소 산소 플루오린 네온 나트륨 마그네슘 알루미늄 규소 인 황 염소 아르곤 칼륨 칼슘 스칸듐 타이타늄 바나듐 크로뮴 망가니즈 철 코발트 니켈 구리 아연 갈륨 저마늄 비소 셀레늄 브로민 크립톤 루비듐 스트론튬 이트륨 지르코늄<br>
+                        나이오븀 몰리브데넘 테크네튬 루테늄 로듐 팔라듐 은 카드뮴 인듐 주석 안티모니 텔루륨 아이오딘 제논 세슘 바륨 란타넘족 하프늄 탄탈럼 텅스텐 레늄 오스뮴 이리듐 백금 금 수은 탈륨 납 비스무트 폴로늄 아스탄틴 라돈 프랑슘 라듐 악티늄족 러더포듐 두브늄 <br>
+                        시보귬 보륨 하슘 마이트너륨 다름슈타튬 뢴트게늄 코페르니슘 니호늄 플레로븀 모스코븀 리버모륨 테네신 오가네손<br>
+                        란타넘족 란타넘 세륨 프라세오디뮴 네오디뮴 프로메튬 사마륨 유로퓸 가돌리늄 터븀 디스프로슘 홀뮴 어븀 툴륨 이터븀 루테튬<br>
+                        악티늄좀 토륨 프로트악티늄 우라늄 넵투늄 플루토늄 아메리슘 퀴륨 버클륨 캘리포늄 아인슈타이늄 페르뮴 멘델레븀 노벨륨 로렌슘<br>
+					</p>
+				    </article>
+				</section>
+				<footer>
+					저작권 개인보호정책 주소
+				</footer>
+			</div>
+			<div id="main_down_ul">
+				<nav>
+					<ul>
+						<li><a class="li1" href="outline.html">개요</a></li>
+						<li><a class="li1" href="member.html">멤버</a></li>
+						<li><a class="li1" href="song.html">노래</a></li>
+					</ul>	
+				</nav>
+			</div> 
+		</div>
+	</div>
+</body>
+</html>

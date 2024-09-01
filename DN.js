@@ -40,3 +40,8 @@ var fc1 = {
 	songlist:['LOCKDOWN','KIDDING','ANOTHERWORLD','REWIND','RE:WIND','WINTERSPRING','OVER','SUPERHERO','BUTYOUWANTMORE','ISEGYEIDOLCYPHER','리와인드','겨울봄','키딩','락다운','어나더월드',
 	       '오버','슈퍼히어로','버츄원몰','이세계아이돌싸이퍼','이세돌싸이퍼'],
 };
+
+function check(){
+    
+    
+}

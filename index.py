@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 print("Content-Type: text/html")   # 헤더
 print()
+import cgi
+form = cgi.FieldStorage()
+pageId = form["id"].value
 print("""<!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +25,7 @@ print("""<!DOCTYPE html>
         <div id="main_up" >
             <div style="width:100%;">
                 <h1>
-                    <a style="color:white" href="index.html">이세계아이돌</a>
+                    <a style="color:white" href="index.py">이세계아이돌</a>
                 </h1>
             </div>
             <div id="main_upright_box">
@@ -42,8 +45,8 @@ print("""<!DOCTYPE html>
             <div id="main_down_ul">
                 <ul>
                     <li><a class="li1" href="index.py?id=outline">개요</a></li>
-                    <li><a class="li1" href="ndex.py?id=member">멤버</a></li>
-                    <li><a class="li1" href="ndex.py?id=song">노래</a></li>
+                    <li><a class="li1" href="index.py?id=member">멤버</a></li>
+                    <li><a class="li1" href="song.html">노래</a></li>
                 </ul>
             </div>
         </div>
@@ -57,3 +60,4 @@ print("""<!DOCTYPE html>
 </body>
 </html>
 """)
+# 나중에 코드 수정할건데, 오른쪽 버튼을 누르면 조건문에 맞춰서 맞는 html 출력하게 바꾸기.

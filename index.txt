@@ -9,11 +9,11 @@ service nginx stop 정지
 이러면 실행 안됨, type python3해서 경로 찾기 -> (/usr/local/bin/python3)   
 이러고 #!/usr/local/bin/python3 아니면 #!/usr/bin/env python(무조건 되는 코드)
 로그 확인 sudo tail -f /var/log/apache2/error.log -> 오류뜰때마다 업데이트 됨.
-https://www.youtube.com/watch?v=sX-9oG6IPc0&list=PLuHgQVnccGMDMxfZEpLbzHPZUEwObEaZq&index=20 생활코딩 재생목록
-query string 부터 시작하기 전에 html 내용 자체를 보수 해야할 듯? 
+https://www.youtube.com/watch?v=Wv-E61YtzNI&list=PLuHgQVnccGMDMxfZEpLbzHPZUEwObEaZq&index=21 생활코딩 재생목록
+제어문 배우고 그걸로 자바스크립트 만들듯? 아닌가 파이썬일지도
  - cgid - gets
 
-
+    
 
     
 
